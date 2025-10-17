@@ -4,7 +4,7 @@
     &__carousel {
         position: relative;
         max-width: 800px;
-        margin: 2rem auto;
+        margin: 2rem auto 0 ;
         overflow: hidden;
         border-radius: 8px;
         padding-top: 12px;
@@ -49,5 +49,5 @@
 
 .sinopse__slides {
     display: flex;
-    transition: transform 0.5s linear; // linear para movimento contínuo
+    transition: transform 0.5s linear;  
 }
