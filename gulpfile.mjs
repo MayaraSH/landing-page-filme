@@ -1,12 +1,13 @@
 // gulpfile.mjs
 import gulp from 'gulp';
-import dartSass from 'sass';          
-import gulpSass from 'gulp-sass';    
+import * as dartSass from 'sass';
+import gulpSass from 'gulp-sass';
 import imagemin from 'gulp-imagemin';
 import uglify from 'gulp-uglify';
 import cleanCSS from 'gulp-clean-css';
 
-const sass = gulpSass(dartSass);    
+const sass = gulpSass(dartSass);
+
 
 // Task para JS
 export function scripts() {
@@ -17,7 +18,7 @@ export function scripts() {
 
 // Task para SCSS
 export function styles() {
-    return gulp.src('./src/styles/*.scss')
+    return gulp.src('./src/styles/main.scss')
         .pipe(sass().on('error', sass.logError))       // compila SCSS
         .pipe(cleanCSS())                               // minifica de verdade
         .pipe(gulp.dest('./dist/css'));

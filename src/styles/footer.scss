@@ -1,0 +1,9 @@
+@use './variaveis.scss';
+
+.footer {
+    background-color: variaveis.$color-dark;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: #999;
+}

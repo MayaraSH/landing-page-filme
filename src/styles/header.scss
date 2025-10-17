@@ -1,0 +1,49 @@
+@use './variaveis.scss';
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: variaveis.$color-dark;
+    color: variaveis.$color-light;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+
+    &--scrolled {
+        background-color: rgba(17, 17, 17, 0.6); // mais opaco/transparente
+        backdrop-filter: blur(6px);
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    &__list {
+        display: flex;
+        width: 100%;
+        list-style: none;
+
+        &-item {
+            margin-left: 1rem;
+
+            &:first-child {
+                margin-left: 0;
+                margin-right: auto; // empurra os demais pra direita
+            }
+
+            a {
+                text-decoration: none;
+                color: variaveis.$color-light;
+                font-weight: 600;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: variaveis.$color-accent;
+                }
+            }
+        }
+    }
+}
