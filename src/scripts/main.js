@@ -60,14 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     slidesContainer.addEventListener('transitionend', () => {
-        // Chegou no clone do primeiro
+        // Clone do primeiro
         if (index >= slides.length) {
         slidesContainer.style.transition = 'none';
         slidesContainer.style.transform = `translateX(-${slideWidth}px)`;
         index = 0;
         }
 
-        // Chegou no clone do último
+        // Clone do último
         if (index < 0) {
         slidesContainer.style.transition = 'none';
         slidesContainer.style.transform = `translateX(-${slides.length * slideWidth}px)`;

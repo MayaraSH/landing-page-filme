@@ -7,7 +7,13 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin: 2rem auto 0;
+
+    @media (max-width:768px), screen and (orientation: landscape){
+        grid-template-columns: repeat(auto-fit, minmax(178px, 2fr));
+        gap: 1rem;
+        }
 }
+
 
 .personagens__card {
     background-color: #222;

@@ -42,17 +42,30 @@ img {
 .section {
     padding: 4rem 1rem;
     text-align: center;
+    scroll-behavior: smooth;
 
     &__title {
         font-size: 2rem;
         font-family: variaveis.$font-title;
         color: variaveis.$color-accent;
         margin-bottom: 1.5rem;
+        line-height: 1.2;
+    
     }
 
     &__text {
         max-width: 800px;
         margin: 0 auto;
         font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        max-width: 90%;
+        display: block;
+        justify-content: center;
+        margin: auto;
+        margin-top: 12px;
     }
 }

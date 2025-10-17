@@ -34,11 +34,16 @@
                 margin-right: auto; // empurra os demais pra direita
             }
 
+
             a {
                 text-decoration: none;
                 color: variaveis.$color-light;
                 font-weight: 600;
                 transition: color 0.3s ease;
+                
+                @media (max-width: 767px){
+                    font-size: 12px;
+                }
 
                 &:hover {
                     color: variaveis.$color-accent;
