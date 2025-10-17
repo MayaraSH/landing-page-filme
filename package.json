@@ -397,5 +397,13 @@
     "yargs-parser": "^20.2.9",
     "yauzl": "^2.10.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MayaraSH/landing-page-filme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MayaraSH/landing-page-filme/issues"
+  },
+  "homepage": "https://github.com/MayaraSH/landing-page-filme#readme",
   "description": ""
 }
