@@ -1,0 +1,35 @@
+@use './variaveis.scss';
+
+.personagens__grid {
+    padding-top: 12px;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 2rem auto 0;
+}
+
+.personagens__card {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    &-img {
+        border-radius: 4px;
+        margin-bottom: 1rem;
+    }
+
+    &-name {
+        color: variaveis.$color-accent;
+        margin-bottom: 0.5rem;
+    }
+
+    &-desc {
+        font-size: 0.9rem;
+    }
+}
