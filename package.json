@@ -16,7 +16,7 @@
     "gulp-imagemin": "^9.1.0",
     "gulp-sass": "^6.0.1",
     "gulp-uglify": "^3.0.2",
-    "sass": "^1.93.2"
+    "sass": "^1.93.3"
   },
   "dependencies": {
     "ansi-colors": "^1.1.0",
@@ -377,7 +377,7 @@
     "url-parse-lax": "^1.0.0",
     "url-to-options": "^1.0.1",
     "util-deprecate": "^1.0.2",
-    "uuid": "^3.4.0",
+    "uuid": "^13.0.0",
     "v8flags": "^4.0.1",
     "value-or-function": "^4.0.0",
     "vinyl": "^3.0.1",
@@ -404,5 +404,6 @@
     "url": "https://github.com/MayaraSH/landing-page-filme/issues"
   },
   "homepage": "https://github.com/MayaraSH/landing-page-filme#readme",
+  "keywords": [],
   "description": ""
 }
